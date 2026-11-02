@@ -1,0 +1,570 @@
+[
+  {
+    "id": 1,
+    "slug": "tiza-industrial",
+    "title": "Tiza Industrial",
+    "category_id": "insumos-mantenimiento",
+    "category_name": "Insumos de Alta Temperatura y Mantenimiento",
+    "material": "Compuesto refractario / Nitruro de Boro / Acero templado elástico",
+    "application": "Marcación térmica (200°C - 300°C), desmolde en caliente de metales no ferrosos y desobstrucción de ductos.",
+    "raw_description": "Tiza Industrial para temperatura alta 200° a 300° C",
+    "measures": {},
+    "image": "assets/images/products/01_tiza-industrial.png",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2026/06/TIZA-INDUSTRIAL-2.png",
+    "featured": true,
+    "sku": "HMC-01",
+    "spec_highlight": "Química técnica y lubricación para fundición no ferrosa",
+    "temp_rating": "200°C a 300°C"
+  },
+  {
+    "id": 2,
+    "slug": "boron-nitrude-coating",
+    "title": "Boron Nitride Coating (Nitruro de Boro)",
+    "category_id": "insumos-mantenimiento",
+    "category_name": "Insumos de Alta Temperatura y Mantenimiento",
+    "material": "Compuesto refractario / Nitruro de Boro / Acero templado elástico",
+    "application": "Marcación térmica (200°C - 300°C), desmolde en caliente de metales no ferrosos y desobstrucción de ductos.",
+    "raw_description": "Recomendado para desmoldeó a alta temperatura y lubricante para fundición de metales No ferrosos (Aluminio, Magnesio, Zinc, Plomo)",
+    "measures": {},
+    "image": "assets/images/products/02_boron-nitrude-coating.png",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2026/06/Boron-Nitrude-coating.png",
+    "featured": true,
+    "sku": "HMC-02",
+    "spec_highlight": "Química técnica y lubricación para fundición no ferrosa",
+    "temp_rating": "200°C a 300°C"
+  },
+  {
+    "id": 3,
+    "slug": "raspador-para-espumado",
+    "title": "Raspador para Espumado",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nAncho : 24.7 cm\nAlto : 17.5 cm",
+    "measures": {
+      "Ancho": "24.7 cm",
+      "Alto": "17.5 cm"
+    },
+    "image": "assets/images/products/03_raspador-para-espumado.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/24_1.jpg",
+    "featured": true,
+    "sku": "HMC-03",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 4,
+    "slug": "cuerda-de-piano-limpia-ductos",
+    "title": "Cuerda de Piano Limpia Ductos Templada",
+    "category_id": "insumos-mantenimiento",
+    "category_name": "Insumos de Alta Temperatura y Mantenimiento",
+    "material": "Compuesto refractario / Nitruro de Boro / Acero templado elástico",
+    "application": "Marcación térmica (200°C - 300°C), desmolde en caliente de metales no ferrosos y desobstrucción de ductos.",
+    "raw_description": "Medidas\nLargo : 1.47 m\nDiametro Punta : 2.5 mm\nLargo Punta : 14 cm",
+    "measures": {
+      "Largo": "1.47 m",
+      "Diametro Punta": "2.5 mm",
+      "Largo Punta": "14 cm"
+    },
+    "image": "assets/images/products/04_cuerda-de-piano-limpia-ductos.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/28.jpg",
+    "featured": false,
+    "sku": "HMC-04",
+    "spec_highlight": "Química técnica y lubricación para fundición no ferrosa",
+    "temp_rating": "200°C a 300°C"
+  },
+  {
+    "id": 5,
+    "slug": "porta-frascos-pp",
+    "title": "Porta Frascos de Polipropileno (PP)",
+    "category_id": "laboratorio-acidos",
+    "category_name": "Muestreo y Resistencia a Ácidos (PP)",
+    "material": "Polipropileno Homopolímero Virgen (PP) Resistente a Ácido Sulfúrico",
+    "application": "Toma de muestras metalúrgicas, celdas de flotación, tanques de lixiviación ácida e inmersión agresiva.",
+    "raw_description": "Medidas\nLargo : 32.5 cm\nAncho : 25.5 cm\nAlto : 25.5 cm",
+    "measures": {
+      "Largo": "32.5 cm",
+      "Ancho": "25.5 cm",
+      "Alto": "25.5 cm"
+    },
+    "image": "assets/images/products/05_porta-frascos-pp.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/27.jpg",
+    "featured": false,
+    "sku": "HMC-05",
+    "spec_highlight": "Inerte al ataque de ácido sulfúrico e hidrocarburos",
+    "temp_rating": "Resistencia química ácida"
+  },
+  {
+    "id": 6,
+    "slug": "palanca-de-acero-al-carbono",
+    "title": "Palanca de Acero al Carbono",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nLargo : 90 cm\nDiámetro : .0.90",
+    "measures": {
+      "Largo": "90 cm",
+      "Diámetro": ".0.90"
+    },
+    "image": "assets/images/products/06_palanca-de-acero-al-carbono.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/26-e1782336196366.jpg",
+    "featured": true,
+    "sku": "HMC-06",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 7,
+    "slug": "palo-de-madera-quinia-resistente-a-la-flexi-n",
+    "title": "Palo de Madera Quinia Alta Flexión",
+    "category_id": "madera-antichispa",
+    "category_name": "Maderas de Alta Flexión y Antichispa",
+    "material": "Madera Quinia Amazónica Seleccionada / Roble Industrial",
+    "application": "Operaciones sin generación de chispas en ambientes con gases o polvo inflamable, alta absorción de impactos.",
+    "raw_description": "Medidas\nLargo : 121.5 cm",
+    "measures": {
+      "Largo": "121.5 cm"
+    },
+    "image": "assets/images/products/07_palo-de-madera-quinia-resistente-a-la-flexi-n.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/25.jpg",
+    "featured": true,
+    "sku": "HMC-07",
+    "spec_highlight": "Madera nativa Quinia, absorbe impactos sin astillado violento",
+    "temp_rating": "Antichispa / Antiestática"
+  },
+  {
+    "id": 8,
+    "slug": "l-mpa-acero-al-carbono",
+    "title": "Lampa de Acero al Carbono Reforzada",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas Industriales Especializadas",
+    "material": "Acero Especial / Aleación Industrial",
+    "application": "Aplicaciones especializadas en plantas concentradoras, talleres y fundiciones.",
+    "raw_description": "",
+    "measures": {},
+    "image": "assets/images/products/08_l-mpa-acero-al-carbono.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/23_1.jpg",
+    "featured": false,
+    "sku": "HMC-08",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 9,
+    "slug": "gancho-acero",
+    "title": "Gancho de Acero Forjado 72 cm",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas:\nLargo : 72 cm",
+    "measures": {
+      "Medidas": "",
+      "Largo": "72 cm"
+    },
+    "image": "assets/images/products/09_gancho-acero.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/22_1.jpg",
+    "featured": true,
+    "sku": "HMC-09",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 10,
+    "slug": "barreta-hexagonal",
+    "title": "Barreta Hexagonal",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\n1 .- Largo : 130 cm\nDiámetro : 3/4 Pulgada\n2.- Largo : 90 cm\nDiámetro : 3/4 Pulgada",
+    "measures": {
+      "1 .- Largo": "130 cm",
+      "Diámetro": "3/4 Pulgada",
+      "2.- Largo": "90 cm"
+    },
+    "image": "assets/images/products/10_barreta-hexagonal.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/21_1.jpg",
+    "featured": true,
+    "sku": "HMC-10",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 11,
+    "slug": "comba-de-madera",
+    "title": "Comba de Madera",
+    "category_id": "madera-antichispa",
+    "category_name": "Maderas de Alta Flexión y Antichispa",
+    "material": "Madera Quinia Amazónica Seleccionada / Roble Industrial",
+    "application": "Operaciones sin generación de chispas en ambientes con gases o polvo inflamable, alta absorción de impactos.",
+    "raw_description": "Medidas\nMediana\nLargo : 51\nCabeza : 19 x 9.5 x 9.5\nChico\nLargo : 51\nCabeza : 14 x 9 x 9",
+    "measures": {
+      "Largo": "51",
+      "Cabeza": "14 x 9 x 9"
+    },
+    "image": "assets/images/products/11_comba-de-madera.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/20_1.jpg",
+    "featured": true,
+    "sku": "HMC-11",
+    "spec_highlight": "Madera nativa Quinia, absorbe impactos sin astillado violento",
+    "temp_rating": "Antichispa / Antiestática"
+  },
+  {
+    "id": 12,
+    "slug": "paleta-acero-al-carbono",
+    "title": "Paleta Acero al Carbono",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nLargo : 46 cm\nPaleta : 23 x 12.5 cm",
+    "measures": {
+      "Largo": "46 cm",
+      "Paleta": "23 x 12.5 cm"
+    },
+    "image": "assets/images/products/12_paleta-acero-al-carbono.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/18_1.jpg",
+    "featured": false,
+    "sku": "HMC-12",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 13,
+    "slug": "lanza-para-deslaminado",
+    "title": "Lanza para Deslaminado",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medida\nLargo : 147 cm\nCuchilla : 28 cm",
+    "measures": {
+      "Largo": "147 cm",
+      "Cuchilla": "28 cm"
+    },
+    "image": "assets/images/products/13_lanza-para-deslaminado.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/17_1.jpg",
+    "featured": false,
+    "sku": "HMC-13",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 14,
+    "slug": "muestreador-pp",
+    "title": "Muestreador de Polipropileno (PP)",
+    "category_id": "laboratorio-acidos",
+    "category_name": "Muestreo y Resistencia a Ácidos (PP)",
+    "material": "Polipropileno Homopolímero Virgen (PP) Resistente a Ácido Sulfúrico",
+    "application": "Toma de muestras metalúrgicas, celdas de flotación, tanques de lixiviación ácida e inmersión agresiva.",
+    "raw_description": "Medidas\nLargo : 163.5 cm",
+    "measures": {
+      "Largo": "163.5 cm"
+    },
+    "image": "assets/images/products/14_muestreador-pp.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/16_1.jpg",
+    "featured": false,
+    "sku": "HMC-14",
+    "spec_highlight": "Inerte al ataque de ácido sulfúrico e hidrocarburos",
+    "temp_rating": "Resistencia química ácida"
+  },
+  {
+    "id": 15,
+    "slug": "gancho-de-acero",
+    "title": "Gancho de Acero Pesado 72 cm",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nLargo : 72 cm",
+    "measures": {
+      "Largo": "72 cm"
+    },
+    "image": "assets/images/products/15_gancho-de-acero.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/15_1.jpg",
+    "featured": false,
+    "sku": "HMC-15",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 16,
+    "slug": "llave-octogonal",
+    "title": "Llave Octogonal",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nLargo : 72 cm\nOctagonal : 7 cm",
+    "measures": {
+      "Largo": "72 cm",
+      "Octagonal": "7 cm"
+    },
+    "image": "assets/images/products/16_llave-octogonal.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/14_1.jpg",
+    "featured": false,
+    "sku": "HMC-16",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 17,
+    "slug": "espumadera-ayax",
+    "title": "Espumadera Ayax",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo :  142 cm\nDiámetro : 30 m",
+    "measures": {
+      "Largo": "142 cm",
+      "Diámetro": "30 m"
+    },
+    "image": "assets/images/products/17_espumadera-ayax.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/13_1.jpg",
+    "featured": false,
+    "sku": "HMC-17",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 18,
+    "slug": "rastrillo-escorificasor-3-mm",
+    "title": "Rastrillo Escorificador de 3 mm",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 210 cm\nPaleta : 35 x 17 cm",
+    "measures": {
+      "Largo": "210 cm",
+      "Paleta": "35 x 17 cm"
+    },
+    "image": "assets/images/products/18_rastrillo-escorificasor-3-mm.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/12_1.jpg",
+    "featured": false,
+    "sku": "HMC-18",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 19,
+    "slug": "espumadera-de-crisoles",
+    "title": "Espumadera de Crisoles",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 120 cm",
+    "measures": {
+      "Largo": "120 cm"
+    },
+    "image": "assets/images/products/19_espumadera-de-crisoles.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/11_1.jpg",
+    "featured": true,
+    "sku": "HMC-19",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 20,
+    "slug": "rastrillo-dentado",
+    "title": "Rastrillo Dentado",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 205 cm\nPaleta : 25 x 15 cm",
+    "measures": {
+      "Largo": "205 cm",
+      "Paleta": "25 x 15 cm"
+    },
+    "image": "assets/images/products/20_rastrillo-dentado.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/10_1.jpg",
+    "featured": false,
+    "sku": "HMC-20",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 21,
+    "slug": "rastrillo-para-jalar-contenedor",
+    "title": "Rastrillo para jalar contenedor",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo :  152 cm\nPaleta :  20 x 10 cm",
+    "measures": {
+      "Largo": "152 cm",
+      "Paleta": "20 x 10 cm"
+    },
+    "image": "assets/images/products/21_rastrillo-para-jalar-contenedor.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/9_1.jpg",
+    "featured": false,
+    "sku": "HMC-21",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 22,
+    "slug": "esp-tula-lisa",
+    "title": "Espátula Lisa",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas Industriales Especializadas",
+    "material": "Acero Especial / Aleación Industrial",
+    "application": "Aplicaciones especializadas en plantas concentradoras, talleres y fundiciones.",
+    "raw_description": "Medidas\nLargo : 32 cm\nPaleta :  6 x 5 cm",
+    "measures": {
+      "Largo": "32 cm",
+      "Paleta": "6 x 5 cm"
+    },
+    "image": "assets/images/products/22_esp-tula-lisa.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/8_1.jpg",
+    "featured": false,
+    "sku": "HMC-22",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 23,
+    "slug": "espumadera-chica-inoxidable",
+    "title": "Espumadera Chica Inoxidable",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 79 cm\nDiámetro : 10 cm",
+    "measures": {
+      "Largo": "79 cm",
+      "Diámetro": "10 cm"
+    },
+    "image": "assets/images/products/23_espumadera-chica-inoxidable.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/7_1.jpg",
+    "featured": true,
+    "sku": "HMC-23",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 24,
+    "slug": "cucharon",
+    "title": "Cucharon",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 106.5 cm\nDiámetro : 20 cm",
+    "measures": {
+      "Largo": "106.5 cm",
+      "Diámetro": "20 cm"
+    },
+    "image": "assets/images/products/24_cucharon.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/6_1.jpg",
+    "featured": false,
+    "sku": "HMC-24",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 25,
+    "slug": "espumadera-grande",
+    "title": "Espumadera Grande",
+    "category_id": "fundicion",
+    "category_name": "Fundición y Crisoles",
+    "material": "Acero Inoxidable / Acero de Alta Resistencia Térmica",
+    "application": "Operación en hornos de fundición, desescoriado y extracción de escoria a altas temperaturas.",
+    "raw_description": "Medidas\nLargo : 75 cm",
+    "measures": {
+      "Largo": "75 cm"
+    },
+    "image": "assets/images/products/25_espumadera-grande.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/5_1.jpg",
+    "featured": false,
+    "sku": "HMC-25",
+    "spec_highlight": "Resistencia a choque térmico y contacto con metal fundido",
+    "temp_rating": "Hasta 600°C+"
+  },
+  {
+    "id": 26,
+    "slug": "recogedor-industrial",
+    "title": "Recogedor Industrial",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nAlto: 80 cm\nContenedor : 28 x 30 x 10 cm",
+    "measures": {
+      "Alto": "80 cm",
+      "Contenedor": "28 x 30 x 10 cm"
+    },
+    "image": "assets/images/products/26_recogedor-industrial.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/4_1.jpg",
+    "featured": true,
+    "sku": "HMC-26",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 27,
+    "slug": "esp-tula-para-sacar-rebanas",
+    "title": "Espátula para Sacar Rebabas",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas Industriales Especializadas",
+    "material": "Acero Especial / Aleación Industrial",
+    "application": "Aplicaciones especializadas en plantas concentradoras, talleres y fundiciones.",
+    "raw_description": "Medidas\nLargo : 32 cm",
+    "measures": {
+      "Largo": "32 cm"
+    },
+    "image": "assets/images/products/27_esp-tula-para-sacar-rebanas.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/3_1.jpg",
+    "featured": false,
+    "sku": "HMC-27",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 28,
+    "slug": "paleta-curva",
+    "title": "Paleta Curva",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas de Forja y Palancas",
+    "material": "Acero al Carbono Forjado Tratado Térmicamente",
+    "application": "Operaciones mecánicas pesadas, desquinche, desprendimiento, palanqueo e industria minera de gran esfuerzo.",
+    "raw_description": "Medidas\nAlto : 50 cm\nPaleta : 22 x 10 cm",
+    "measures": {
+      "Alto": "50 cm",
+      "Paleta": "22 x 10 cm"
+    },
+    "image": "assets/images/products/28_paleta-curva.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/2_1.jpg",
+    "featured": false,
+    "sku": "HMC-28",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  },
+  {
+    "id": 29,
+    "slug": "esp-tula-canaletas",
+    "title": "Espátula Canaletas",
+    "category_id": "forja-palancas",
+    "category_name": "Herramientas Industriales Especializadas",
+    "material": "Acero Especial / Aleación Industrial",
+    "application": "Aplicaciones especializadas en plantas concentradoras, talleres y fundiciones.",
+    "raw_description": "Medidas\nLargo : 50 cm\nAncho  : 5 cm",
+    "measures": {
+      "Largo": "50 cm",
+      "Ancho": "5 cm"
+    },
+    "image": "assets/images/products/29_esp-tula-canaletas.jpg",
+    "image_remote": "https://www.herramec.com.pe/wp-content/uploads/2024/07/1_1.jpg",
+    "featured": false,
+    "sku": "HMC-29",
+    "spec_highlight": "Forja tratada térmicamente contra deformación por palanqueo",
+    "temp_rating": "Acero alta tenacidad"
+  }
+]

@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Servicios industriales Herramec EIRL: Fabricación de herramientas a medida, recubrimiento epóxico anticorrosivo, señalización industrial NTP y mantenimiento metalmecánico en plantas mineras.">
+  <title>Servicios Industriales y de Maestranza | HERRAMEC EIRL</title>
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Corporativos Patagonia Industrial -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .service-row-block {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--c-slate-200);
+    }
+
+    .service-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 56px;
+    }
+
+    .service-split-grid.reverse .service-text-side { order: 1; }
+    .service-split-grid.reverse .service-photo-side { order: 2; }
+
+    /* Marco de Fotografía: Se muestra entera sin recortes */
+    .service-photo-frame {
+      border: 1px solid var(--c-slate-300);
+      border-radius: var(--radius-xs);
+      overflow: hidden;
+      background: var(--c-black);
+      box-shadow: var(--shadow-card);
+    }
+
+    .service-photo-frame img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: contain; /* Nunca se corta */
+      display: block;
+      background: #0f141c;
+    }
+
+    .service-checklist {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin: 24px 0 32px;
+    }
+
+    .service-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9375rem;
+      color: var(--c-slate-700);
+    }
+
+    .service-checklist li svg {
+      color: var(--c-orange);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .step-chain-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .step-chain-card {
+      background: var(--c-white);
+      border: 1px solid var(--c-slate-200);
+      border-radius: var(--radius-xs);
+      padding: 24px 18px;
+      transition: var(--transition);
+    }
+
+    .step-chain-card:hover {
+      border-color: var(--c-black);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .step-chain-num {
+      font-family: var(--font-mono);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--c-orange);
+      margin-bottom: 8px;
+    }
+
+    .step-chain-title {
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .step-chain-desc {
+      font-size: 0.8125rem;
+      color: var(--c-slate-500);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 960px) {
+      .service-split-grid,
+      .service-split-grid.reverse {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .service-split-grid.reverse .service-text-side { order: 2; }
+      .service-split-grid.reverse .service-photo-side { order: 1; }
+      .step-chain-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 580px) {
+      .step-chain-grid { grid-template-columns: 1fr; }
+      .service-photo-frame img { max-height: 260px; }
+      .service-row-block { padding: 40px 0; }
+    }
+  </style>
+  <script>(function(){try{var t=localStorage.getItem('herramec_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span>HERRAMEC E&amp;M EIRL</span>
+        <span>//</span>
+        <strong>SERVICIOS INDUSTRIALES EN TERRENO Y MAESTRANZA</strong>
+        <span>//</span>
+        <span>ATENCIÓN A OPERACIONES MINERAS</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+51952392860">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Central: 952 392 860 / 970 568 875</span>
+        </a>
+        <a href="mailto:ventas@herramec.com.pe">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>ventas@herramec.com.pe</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper" aria-label="Herramec Inicio">
+        <img src="assets/images/cropped-logo-ehrramec.jpeg" alt="Herramec Logo" class="brand-logo-img">
+        <div class="brand-titles">
+          <span class="brand-name">HERRAMEC</span>
+          <span class="brand-sub">Metalurgia &amp; Herramientas Mineras</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link">Productos (29)</a></li>
+          <li><a href="servicios.html" class="nav-link active">Servicios</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector Dinámico de Tema (Claro / Oscuro) -->
+        <button class="icon-action-btn theme-toggle-btn js-theme-toggle" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema (Alt + T)">
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="icon-action-btn" onclick="openSearchModal()" aria-label="Buscar producto" title="Buscar en catálogo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <button class="icon-action-btn js-open-quote-drawer" aria-label="Ver lista de cotización" title="Bolsa de cotización">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-count">0</span>
+        </button>
+
+        <a href="cotizador.html" class="btn btn-black btn-sm">Cotización B2B <span>↗</span></a>
+
+        <button class="icon-action-btn menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:32px;">
+        <span class="brand-name">HERRAMEC</span>
+        <button class="icon-action-btn" id="mobileNavClose" aria-label="Cerrar menú">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Catálogo Completo (29 Productos)</a></li>
+        <li><a href="servicios.html" class="active">Servicios Industriales</a></li>
+        <li><a href="nosotros.html">Nuestra Empresa &amp; Filosofía</a></li>
+        <li><a href="contacto.html">Contacto &amp; Ubicación</a></li>
+        <li><a href="cotizador.html">Módulo de Cotización Formal</a></li>
+      </ul>
+    </div>
+    <div style="border-top:1px solid var(--c-slate-200); padding-top:24px;">
+      <a href="https://wa.me/51952392860" target="_blank" class="btn btn-primary" style="width:100%; margin-bottom:12px;">WhatsApp Directo ↗</a>
+      <div class="text-xs text-slate">Lurigancho - Chosica, Lima · Telf: 952 392 860</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SERVICIOS -->
+    <section class="section-dark" style="padding: 48px 0 38px; border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div class="container">
+        <div class="eyebrow" style="color:#ff8e54;">Maestranza, Recubrimientos &amp; Terreno</div>
+        <h1 style="font-size:clamp(2rem, 3.5vw, 2.9rem); color:#fff; margin-bottom:10px;">
+          Servicios Especializados para Minería e Industria
+        </h1>
+        <p style="font-size:1.05rem; color:var(--c-slate-300); max-width:720px; line-height:1.6; margin:0;">
+          Fabricación bajo plano, protección de pisos industriales, señalética normativa y mantenimiento de estructuras con personal homologado.
+        </p>
+      </div>
+    </section>
+
+    <!-- SERVICIO 1: FABRICACIÓN A MEDIDA -->
+    <section class="service-row-block" id="fabricacion">
+      <div class="container">
+        <div class="service-split-grid">
+          <div class="service-text-side">
+            <div class="eyebrow">Servicio 01 // Maestranza &amp; Forja</div>
+            <h2 style="font-size:clamp(1.7rem, 2.6vw, 2.2rem); margin-bottom:12px;">
+              Fabricación de Herramientas a Medida
+            </h2>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--c-slate-600); margin-bottom:18px;">
+              Elaboramos herramientas manuales y accesorios industriales según los planos o muestras de su operación: barretas con curvaturas especiales, espumaderas con mangos de más de 2 metros para crisoles profundos y palas de alta resistencia al desgaste.
+            </p>
+
+            <ul class="service-checklist">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Aceros al Carbono &amp; Inoxidables:</strong> Selección metalúrgica para soportar torque mecánico o vapores ácidos.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Madera Quinia Amazónica:</strong> Máxima elasticidad para absorber impactos sin quiebre violento.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Lotes a Medida:</strong> Despacho rápido para paradas de planta programadas.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20cotizar%20fabricaci%C3%B3n%20de%20herramientas%20a%20medida." target="_blank" class="btn btn-primary">
+              Cotizar Fabricación a Medida ↗
+            </a>
+          </div>
+
+          <div class="service-photo-side">
+            <div class="service-photo-frame">
+              <img src="assets/images/service-2.jpg" alt="Fabricación de herramientas en taller Herramec">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 2: RECUBRIMIENTO EPÓXICO -->
+    <section class="service-row-block section-gray" id="epoxico">
+      <div class="container">
+        <div class="service-split-grid reverse">
+          <div class="service-text-side">
+            <div class="eyebrow">Servicio 02 // Pisos Industriales</div>
+            <h2 style="font-size:clamp(1.7rem, 2.6vw, 2.2rem); margin-bottom:12px;">
+              Recubrimiento Epóxico y Protección Química
+            </h2>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--c-slate-600); margin-bottom:18px;">
+              Aplicación de esquemas epóxicos de alto tránsito que sellan e impermeabilizan pisos de plantas concentradoras, talleres mecánicos y almacenes de reactivos expuestos a ácidos, grasas e impacto de maquinaria pesada.
+            </p>
+
+            <ul class="service-checklist">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Resistencia Química:</strong> Barrera infranqueable ante derrames de ácido sulfúrico y solventes.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Acabados Antideslizantes:</strong> Textura de seguridad para tránsito de personal con calzado minero.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Fácil Descontaminación:</strong> Superficies monolíticas continuas sin juntas de proliferación.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20evaluaci%C3%B3n%20para%20recubrimiento%20ep%C3%B3xico%20en%20planta." target="_blank" class="btn btn-primary">
+              Cotizar Piso Epóxico ↗
+            </a>
+          </div>
+
+          <div class="service-photo-side">
+            <div class="service-photo-frame">
+              <img src="assets/images/service-3.jpg" alt="Aplicación de recubrimientos epóxicos industriales">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 3: SEÑALIZACIÓN INDUSTRIAL -->
+    <section class="service-row-block" id="senalizacion">
+      <div class="container">
+        <div class="service-split-grid">
+          <div class="service-text-side">
+            <div class="eyebrow">Servicio 03 // Normativa Técnica NTP</div>
+            <h2 style="font-size:clamp(1.7rem, 2.6vw, 2.2rem); margin-bottom:12px;">
+              Señalización Industrial &amp; Seguridad Minera
+            </h2>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--c-slate-600); margin-bottom:18px;">
+              Planes integrales de señalética fotoluminiscente y demarcación operativa bajo la Norma Técnica Peruana NTP 399.010-1 y directivas de seguridad minera del MINEM.
+            </p>
+
+            <ul class="service-checklist">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Materiales Homologados:</strong> Poliestireno de alto impacto, aluminio y viniles con filtro UV.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Señales Fotoluminiscentes:</strong> Visibilidad garantizada en cortes de energía en socavón o túneles.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Rotulado de Tuberías:</strong> Código de colores normado para agua, ácidos, combustible y gases.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20propuesta%20de%20se%C3%B1alizaci%C3%B3n%20industrial%20para%20mi%20empresa." target="_blank" class="btn btn-primary">
+              Cotizar Plan de Señalética ↗
+            </a>
+          </div>
+
+          <div class="service-photo-side">
+            <div class="service-photo-frame">
+              <img src="assets/images/service-4.jpg" alt="Señalización industrial en planta">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIO 4: MANTENIMIENTO METALMECÁNICO -->
+    <section class="service-row-block section-gray" id="mantenimiento">
+      <div class="container">
+        <div class="service-split-grid reverse">
+          <div class="service-text-side">
+            <div class="eyebrow">Servicio 04 // Montaje &amp; Calderería</div>
+            <h2 style="font-size:clamp(1.7rem, 2.6vw, 2.2rem); margin-bottom:12px;">
+              Mantenimiento Metalmecánico y Estructuras
+            </h2>
+            <p style="font-size:0.95rem; line-height:1.6; color:var(--c-slate-600); margin-bottom:18px;">
+              Servicios preventivos y correctivos para naves industriales: arenado y granallado comercial, aplicación de pintura anticorrosiva epoxi-poliuretano y cambio de planchas antidesgaste en chutes y tolvas.
+            </p>
+
+            <ul class="service-checklist">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Personal Homologado:</strong> Técnicos certificados en altura y espacios confinados (D.S. 024-2016-EM).</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Equipos Propios:</strong> Compresoras, máquinas TIG/MIG y tolvas sin intermediarios.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Dossier de Calidad:</strong> Reportes de espesor de película seca (EPS) y adherencia.</span>
+              </li>
+            </ul>
+
+            <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20cotizar%20mantenimiento%20industrial%20y%20estructuras." target="_blank" class="btn btn-primary">
+              Coordinar Visita a Planta ↗
+            </a>
+          </div>
+
+          <div class="service-photo-side">
+            <div class="service-photo-frame">
+              <img src="assets/images/service-1.jpg" alt="Mantenimiento metalmecánico industrial">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGÍA INDUSTRIAL PASO A PASO -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align:center; max-width:680px; margin:0 auto 28px;">
+          <div class="eyebrow">Flujo Operativo</div>
+          <h2 style="font-size:clamp(1.7rem, 2.8vw, 2.2rem);">Garantía de Ejecución en 5 Etapas</h2>
+        </div>
+
+        <div class="step-chain-grid">
+          <div class="step-chain-card">
+            <div class="step-chain-num">01</div>
+            <div class="step-chain-title">Diagnóstico</div>
+            <div class="step-chain-desc">Inspección de temperatura, químicos y carga mecánica de la planta.</div>
+          </div>
+
+          <div class="step-chain-card">
+            <div class="step-chain-num">02</div>
+            <div class="step-chain-title">Ingeniería</div>
+            <div class="step-chain-desc">Selección metalúrgica de aleaciones y dimensionamiento bajo plano.</div>
+          </div>
+
+          <div class="step-chain-card">
+            <div class="step-chain-num">03</div>
+            <div class="step-chain-title">Fabricación</div>
+            <div class="step-chain-desc">Forja en taller Chosica con control dimensional estricto.</div>
+          </div>
+
+          <div class="step-chain-card">
+            <div class="step-chain-num">04</div>
+            <div class="step-chain-title">Instalación</div>
+            <div class="step-chain-desc">Montaje en terreno con personal homologado y protocolos EPP.</div>
+          </div>
+
+          <div class="step-chain-card">
+            <div class="step-chain-num">05</div>
+            <div class="step-chain-title">Dossier</div>
+            <div class="step-chain-desc">Entrega formal de certificados técnicos y garantía de servicio.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-wrapper">
+            <img src="assets/images/cropped-logo-ehrramec.jpeg" alt="Herramec Logo" class="brand-logo-img">
+            <div class="brand-titles">
+              <span class="brand-name">HERRAMEC</span>
+              <span class="brand-sub">Herramec E&amp;M EIRL</span>
+            </div>
+          </a>
+          <p>
+            Fabricación nacional de herramientas manuales de acero al carbono e inoxidable resistente a altas temperaturas y al ácido para la minería y fundiciones.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Página de Inicio</a></li>
+            <li><a href="productos.html">Catálogo de Productos</a></li>
+            <li><a href="servicios.html">Servicios Industriales</a></li>
+            <li><a href="nosotros.html">Nuestra Trayectoria</a></li>
+            <li><a href="contacto.html">Contacto &amp; Planta</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Líneas de Herramientas</h4>
+          <ul class="footer-links">
+            <li><a href="productos.html?cat=fundicion">Fundición &amp; Crisoles</a></li>
+            <li><a href="productos.html?cat=forja-palancas">Forja y Palancas de Acero</a></li>
+            <li><a href="productos.html?cat=madera-antichispa">Madera Quinia Antichispa</a></li>
+            <li><a href="productos.html?cat=laboratorio-acidos">Muestreo &amp; Polipropileno</a></li>
+            <li><a href="productos.html?cat=insumos-mantenimiento">Insumos de Alta Temperatura</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contacto Corporativo</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Casa Huerta La Campiña Sector B Mz. O Lt. 21 Lurigancho - Chosica, Lima</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>952 392 860 / 970 568 875</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>ventas@herramec.com.pe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Herramec E&amp;M EIRL. RUC y Registro Oficial. Todos los derechos reservados.</span>
+        <span>Fabricación y Maestranza Especializada · Chosica, Lima - Perú</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flotante Directo -->
+  <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20informaci%C3%B3n." target="_blank" class="whatsapp-floating" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Drawer Cotización -->
+  <div class="drawer-overlay" id="quoteDrawerOverlay"></div>
+  <aside class="quote-drawer" id="quoteDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span>Lista de Cotización</span>
+      </div>
+      <button class="drawer-close" id="quoteDrawerClose" aria-label="Cerrar drawer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="quoteDrawerBody"></div>
+    <div class="drawer-footer" id="quoteDrawerFooter" style="display:none;">
+      <button class="btn btn-primary" id="btnSendQuoteWhatsapp" style="width:100%;">
+        Enviar por WhatsApp a Ventas ↗
+      </button>
+      <a href="cotizador.html" class="btn btn-outline" style="width:100%;">
+        Ver y Exportar Cotización Completa
+      </a>
+      <button class="btn-clear-quote-drawer" onclick="clearQuoteDrawer()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+        Limpiar lista de cotización
+      </button>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

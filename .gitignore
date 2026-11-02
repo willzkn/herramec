@@ -1,0 +1,11 @@
+# Logs & Scratches
+*.log
+_datos_oficiales_herramec/
+run-server.bat
+server.ps1
+mockup_herramec.html
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,673 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha técnica de herramienta industrial Herramec EIRL: medidas exactas, materiales de forja, resistencia al calor y al ácido para la minería y fundiciones.">
+  <title>Ficha Técnica de Herramienta Industrial | HERRAMEC EIRL</title>
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Corporativos Patagonia Industrial -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <style>
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      color: var(--c-slate-400);
+      padding: 24px 0 16px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-nav a:hover { color: var(--c-black); }
+    .breadcrumb-sep { color: var(--c-slate-300); }
+
+    .detail-grid-pdp {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 48px;
+      padding-bottom: 64px;
+    }
+
+    /* Marco Técnico de Imagen de Producto:
+       Fondo neutro, herramienta 100% visible sin recortes */
+    .detail-photo-stage {
+      background-color: #fafbfc;
+      border: 1px solid var(--c-slate-200);
+      border-radius: var(--radius-xs);
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 480px;
+      position: sticky;
+      top: 96px;
+    }
+
+    .detail-photo-stage img {
+      max-width: 100%;
+      max-height: 440px;
+      object-fit: contain;
+      width: auto;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .spec-table-blueprint {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.8125rem;
+      background: var(--c-white);
+      border: 1px solid var(--c-slate-200);
+    }
+
+    .spec-table-blueprint th, 
+    .spec-table-blueprint td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--c-slate-200);
+    }
+
+    .spec-table-blueprint tr:last-child th,
+    .spec-table-blueprint tr:last-child td {
+      border-bottom: none;
+    }
+
+    .spec-table-blueprint th {
+      color: var(--c-slate-500);
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      width: 38%;
+      background: var(--c-slate-50);
+    }
+
+    .spec-table-blueprint td {
+      color: var(--c-black);
+      font-weight: 600;
+    }
+
+    .pdp-action-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0 28px;
+      flex-wrap: wrap;
+    }
+
+    .pdp-quantity-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--c-slate-300);
+      border-radius: var(--radius-xs);
+      background-color: var(--c-white);
+      height: 46px;
+    }
+
+    .pdp-quantity-btn {
+      width: 40px;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--c-slate-800);
+    }
+
+    .pdp-quantity-btn:hover { background-color: var(--c-slate-100); }
+
+    .pdp-quantity-input {
+      width: 44px;
+      text-align: center;
+      font-family: var(--font-mono);
+      font-size: 0.9375rem;
+      font-weight: 700;
+      border: none;
+      outline: none;
+    }
+
+    /* Tabs Técnicos */
+    .tab-nav-blueprint {
+      display: flex;
+      gap: 28px;
+      border-bottom: 2px solid var(--c-slate-200);
+      margin-bottom: 28px;
+      overflow-x: auto;
+    }
+
+    .tab-btn-tech {
+      padding: 10px 0;
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--c-slate-500);
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .tab-btn-tech.active,
+    .tab-btn-tech:hover {
+      color: var(--c-black);
+      border-color: var(--c-orange);
+    }
+
+    .tab-pane-content {
+      display: none;
+      line-height: 1.8;
+      color: var(--c-slate-700);
+      font-size: 0.9375rem;
+    }
+
+    .tab-pane-content.active { display: block; }
+
+    @media (max-width: 900px) {
+      .detail-grid-pdp { grid-template-columns: 1fr; gap: 32px; }
+      .detail-photo-stage { position: static; min-height: 280px; padding: 20px; }
+      .product-specs-detail-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+
+    .product-specs-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    @media (max-width: 580px) {
+      .pdp-action-bar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .pdp-action-bar .btn {
+        width: 100%;
+      }
+      .tab-nav-blueprint {
+        gap: 16px;
+      }
+      .spec-table-blueprint th,
+      .spec-table-blueprint td {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+  <script>(function(){try{var t=localStorage.getItem('herramec_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <span>HERRAMEC E&amp;M EIRL</span>
+        <span>//</span>
+        <strong>FICHA TÉCNICA DE HOMOLOGACIÓN INDUSTRIAL</strong>
+        <span>//</span>
+        <span>LURIGANCHO - CHOSICA, LIMA</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+51952392860">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>Central: 952 392 860 / 970 568 875</span>
+        </a>
+        <a href="mailto:ventas@herramec.com.pe">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>ventas@herramec.com.pe</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-wrapper" aria-label="Herramec Inicio">
+        <img src="assets/images/cropped-logo-ehrramec.jpeg" alt="Herramec Logo" class="brand-logo-img">
+        <div class="brand-titles">
+          <span class="brand-name">HERRAMEC</span>
+          <span class="brand-sub">Metalurgia &amp; Herramientas Mineras</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Inicio</a></li>
+          <li><a href="productos.html" class="nav-link active">Productos (29)</a></li>
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Selector Dinámico de Tema (Claro / Oscuro) -->
+        <button class="icon-action-btn theme-toggle-btn js-theme-toggle" aria-label="Cambiar tema claro/oscuro" title="Cambiar tema (Alt + T)">
+          <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="theme-icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <button class="icon-action-btn" onclick="openSearchModal()" aria-label="Buscar producto" title="Buscar en catálogo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+
+        <button class="icon-action-btn js-open-quote-drawer" aria-label="Ver lista de cotización" title="Bolsa de cotización">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+          <span class="cart-count">0</span>
+        </button>
+
+        <a href="cotizador.html" class="btn btn-black btn-sm">Cotización B2B <span>↗</span></a>
+
+        <button class="icon-action-btn menu-toggle" id="menuToggle" aria-label="Abrir menú">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú Móvil -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:32px;">
+        <span class="brand-name">HERRAMEC</span>
+        <button class="icon-action-btn" id="mobileNavClose" aria-label="Cerrar menú">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Catálogo Completo (29 Productos)</a></li>
+        <li><a href="servicios.html">Servicios Industriales</a></li>
+        <li><a href="nosotros.html">Nuestra Empresa &amp; Filosofía</a></li>
+        <li><a href="contacto.html">Contacto &amp; Ubicación</a></li>
+        <li><a href="cotizador.html">Módulo de Cotización Formal</a></li>
+      </ul>
+    </div>
+    <div style="border-top:1px solid var(--c-slate-200); padding-top:24px;">
+      <a href="https://wa.me/51952392860" target="_blank" class="btn btn-primary" style="width:100%; margin-bottom:12px;">WhatsApp Directo ↗</a>
+      <div class="text-xs text-slate">Lurigancho - Chosica, Lima · Telf: 952 392 860</div>
+    </div>
+  </div>
+
+  <main>
+    <div class="container">
+      <!-- Migas de Pan -->
+      <nav class="breadcrumb-nav">
+        <a href="index.html">INICIO</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="productos.html">CATÁLOGO</a>
+        <span class="breadcrumb-sep">/</span>
+        <span id="breadcrumbCategory">CATEGORÍA</span>
+        <span class="breadcrumb-sep">/</span>
+        <strong id="breadcrumbTitle" style="color:var(--c-black);">PRODUCTO</strong>
+      </nav>
+
+      <!-- Grid Principal de Detalle -->
+      <div class="detail-grid-pdp">
+        <!-- Escenario de Fotografía (100% entera sin recortes) -->
+        <div class="detail-photo-stage">
+          <img id="detailProductImage" src="assets/images/products/19_espumadera-de-crisoles.jpg" alt="Foto del Producto">
+        </div>
+
+        <!-- Columna Técnica -->
+        <div>
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:6px;">
+            <span class="eyebrow" id="detailProductCat" style="margin-bottom:0;">FUNDICIÓN &amp; CRISOLES</span>
+            <span class="tech-tag" id="detailProductSku">REF: HMC-19</span>
+          </div>
+
+          <h1 id="detailProductTitle" style="font-size:clamp(1.8rem, 3.2vw, 2.5rem); margin-bottom:16px;">
+            Espumadera de Crisoles
+          </h1>
+
+          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+            <span class="tech-tag tech-tag-orange" id="detailProductMaterial">Acero Inoxidable / Alta Temperatura</span>
+            <span class="tech-tag tech-tag-dark">Fabricación Herramec EIRL</span>
+            <span class="tech-tag" id="detailProductTemp">TEMP: HASTA 600°C+</span>
+          </div>
+
+          <p id="detailProductApp" style="font-size:1.0625rem; line-height:1.75; color:var(--c-slate-700); margin-bottom:20px;">
+            Diseñada especialmente para operaciones de desescoriado y extracción de escoria en crisoles de fundición, garantizando distancia térmica de seguridad para el operador y resistencia a choques térmicos continuos.
+          </p>
+
+          <!-- Tabla Técnica de Dimensiones -->
+          <div>
+            <div class="text-xs text-mono text-slate" style="margin-bottom:6px; font-weight:700;">
+              // ESPECIFICACIONES DIMENSIONALES EXACTAS:
+            </div>
+            <table class="spec-table-blueprint" id="detailMeasuresTable">
+              <tbody><!-- Llenado dinámico --></tbody>
+            </table>
+          </div>
+
+          <!-- Barra de Acciones y Cantidad -->
+          <div class="pdp-action-bar">
+            <div class="pdp-quantity-box">
+              <button class="pdp-quantity-btn" id="btnQtyMinus">-</button>
+              <input type="number" class="pdp-quantity-input" id="pdpQtyInput" value="1" min="1" max="500">
+              <button class="pdp-quantity-btn" id="btnQtyPlus">+</button>
+            </div>
+
+            <button class="btn btn-primary" id="btnPdpAddQuote">
+              + Añadir a Cotización
+            </button>
+
+            <a href="#" class="btn btn-outline" id="btnPdpWhatsappDirect" target="_blank">
+              Consultar por WhatsApp ↗
+            </a>
+          </div>
+
+          <!-- Cuadro de Garantía de Maestranza -->
+          <div style="background-color:var(--c-slate-50); border:1px solid var(--c-slate-200); padding:16px 20px; border-radius:var(--radius-xs); display:flex; gap:14px; align-items:flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--c-orange); flex-shrink:0; margin-top:2px;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <div class="text-sm">
+              <strong style="color:var(--c-black); display:block; margin-bottom:2px;">Garantía de Fabricación &amp; Trazabilidad Metalúrgica</strong>
+              <span style="color:var(--c-slate-600); font-size:0.8125rem;">
+                Cada lote se elabora con aceros homologados y pruebas dimensionales. Podemos ajustar largos, curvaturas o diámetros bajo plano técnico.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TABS TÉCNICOS DETALLADOS -->
+      <div style="border-top:1px solid var(--c-slate-200); padding-top:28px; margin-top:20px;">
+        <div class="tab-nav-blueprint">
+          <button class="tab-btn-tech active" data-tab="tab-specs">Control de Calidad</button>
+          <button class="tab-btn-tech" data-tab="tab-durability">Resistencia Térmica &amp; Ácidos</button>
+          <button class="tab-btn-tech" data-tab="tab-custom">Fabricación a Medida</button>
+        </div>
+
+        <div class="tab-pane-content active" id="tab-specs">
+          <div style="background:var(--c-slate-50); border:1px solid var(--c-slate-200); padding:20px; border-radius:var(--radius-xs);">
+            <ul style="list-style:none; display:grid; gap:8px; font-size:0.875rem;">
+              <li style="display:flex; align-items:center; gap:8px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--c-orange)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Soldaduras TIG y arco eléctrico con electrodos especiales para aceros inoxidables.</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:8px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--c-orange)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Forjado en caliente con enfriamiento controlado para evitar fragilidad por hidrógeno.</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:8px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--c-orange)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Acabados libres de rebabas y mangos de madera Quinia con fibra amortiguadora antichispa.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane-content" id="tab-durability">
+          <div style="background:var(--c-slate-50); border:1px solid var(--c-slate-200); padding:20px; border-radius:var(--radius-xs);">
+            <ul style="list-style:none; display:grid; gap:8px; font-size:0.875rem;">
+              <li style="display:flex; align-items:center; gap:8px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--c-orange)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Fundición y Hornos:</strong> Aleaciones que conservan su tenacidad mecánica ante choques térmicos de 600°C+.</span>
+              </li>
+              <li style="display:flex; align-items:center; gap:8px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--c-orange)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span><strong>Lixiviación y Celdas:</strong> Polipropileno virgen y aceros serie 300 inmunes al ataque de ácido sulfúrico.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tab-pane-content" id="tab-custom">
+          <div style="background:var(--c-slate-50); border:1px solid var(--c-slate-200); padding:20px; border-radius:var(--radius-xs); display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;">
+            <div>
+              <strong style="color:var(--c-black); display:block; margin-bottom:4px;">¿Necesita este ítem con medidas especiales?</strong>
+              <span style="font-size:0.85rem; color:var(--c-slate-600);">Podemos fabricar con vástagos de 1.80m, 2.0m o curvaturas según plano de su crisol.</span>
+            </div>
+            <a href="contacto.html" class="btn btn-primary btn-sm">Solicitar Medida Especial ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTOS RELACIONADOS -->
+      <div style="margin-top:72px; padding-top:40px; border-top:1px solid var(--c-slate-200);">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:28px;">
+          <div>
+            <div class="eyebrow">Complemente su Equipamiento</div>
+            <h2 style="font-size:1.6rem;">Herramientas Relacionadas</h2>
+          </div>
+          <a href="productos.html" class="btn btn-outline btn-sm">Ver Catálogo Completo ↗</a>
+        </div>
+        <div class="product-grid" id="relatedProductsGrid"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" style="margin-top:72px;">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-wrapper">
+            <img src="assets/images/cropped-logo-ehrramec.jpeg" alt="Herramec Logo" class="brand-logo-img">
+            <div class="brand-titles">
+              <span class="brand-name">HERRAMEC</span>
+              <span class="brand-sub">Herramec E&amp;M EIRL</span>
+            </div>
+          </a>
+          <p>
+            Fabricación nacional de herramientas manuales de acero al carbono e inoxidable resistente a altas temperaturas y al ácido para la minería y fundiciones.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Página de Inicio</a></li>
+            <li><a href="productos.html">Catálogo de Productos</a></li>
+            <li><a href="servicios.html">Servicios Industriales</a></li>
+            <li><a href="nosotros.html">Nuestra Trayectoria</a></li>
+            <li><a href="contacto.html">Contacto &amp; Planta</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Líneas de Herramientas</h4>
+          <ul class="footer-links">
+            <li><a href="productos.html?cat=fundicion">Fundición &amp; Crisoles</a></li>
+            <li><a href="productos.html?cat=forja-palancas">Forja y Palancas de Acero</a></li>
+            <li><a href="productos.html?cat=madera-antichispa">Madera Quinia Antichispa</a></li>
+            <li><a href="productos.html?cat=laboratorio-acidos">Muestreo &amp; Polipropileno</a></li>
+            <li><a href="productos.html?cat=insumos-mantenimiento">Insumos de Alta Temperatura</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contacto Corporativo</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Casa Huerta La Campiña Sector B Mz. O Lt. 21 Lurigancho - Chosica, Lima</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>952 392 860 / 970 568 875</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>ventas@herramec.com.pe</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Herramec E&amp;M EIRL. RUC y Registro Oficial. Todos los derechos reservados.</span>
+        <span>Fabricación y Maestranza Especializada · Chosica, Lima - Perú</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Flotante Directo -->
+  <a href="https://wa.me/51952392860?text=Hola%20Herramec,%20solicito%20informaci%C3%B3n." target="_blank" class="whatsapp-floating" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Drawer Cotización -->
+  <div class="drawer-overlay" id="quoteDrawerOverlay"></div>
+  <aside class="quote-drawer" id="quoteDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span>Lista de Cotización</span>
+      </div>
+      <button class="drawer-close" id="quoteDrawerClose" aria-label="Cerrar drawer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="drawer-body" id="quoteDrawerBody"></div>
+    <div class="drawer-footer" id="quoteDrawerFooter" style="display:none;">
+      <button class="btn btn-primary" id="btnSendQuoteWhatsapp" style="width:100%;">
+        Enviar por WhatsApp a Ventas ↗
+      </button>
+      <a href="cotizador.html" class="btn btn-outline" style="width:100%;">
+        Ver y Exportar Cotización Completa
+      </a>
+      <button class="btn-clear-quote-drawer" onclick="clearQuoteDrawer()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+        Limpiar lista de cotización
+      </button>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.HERRAMEC_PRODUCTS) return;
+
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get('id') || 19, 10);
+      const product = window.HERRAMEC_PRODUCTS.find(p => p.id === id) || window.HERRAMEC_PRODUCTS[0];
+
+      document.title = `${product.title} (${product.sku}) | Herramec EIRL`;
+
+      document.getElementById('breadcrumbCategory').textContent = product.category_name.toUpperCase();
+      document.getElementById('breadcrumbTitle').textContent = product.title.toUpperCase();
+
+      const imgEl = document.getElementById('detailProductImage');
+      imgEl.src = product.image;
+      imgEl.alt = product.title;
+      imgEl.onerror = () => { imgEl.src = product.image_remote; };
+
+      document.getElementById('detailProductCat').textContent = product.category_name.toUpperCase();
+      document.getElementById('detailProductSku').textContent = `SKU: ${product.sku}`;
+      document.getElementById('detailProductTitle').textContent = product.title;
+      document.getElementById('detailProductMaterial').textContent = product.material;
+      document.getElementById('detailProductTemp').textContent = product.temp_rating || 'INDUSTRIAL';
+      document.getElementById('detailProductApp').textContent = product.application;
+
+      const tableBody = document.querySelector('#detailMeasuresTable tbody');
+      let tableHtml = `
+        <tr><th>Código SKU</th><td>${product.sku}</td></tr>
+        <tr><th>Material Base</th><td>${product.material}</td></tr>
+        <tr><th>Categoría Operativa</th><td>${product.category_name}</td></tr>
+      `;
+
+      if (Object.keys(product.measures).length > 0) {
+        Object.entries(product.measures).forEach(([k, v]) => {
+          tableHtml += `<tr><th>${k}</th><td>${v}</td></tr>`;
+        });
+      } else if (product.raw_description) {
+        tableHtml += `<tr><th>Especificación</th><td>${product.raw_description}</td></tr>`;
+      } else {
+        tableHtml += `<tr><th>Dimensiones</th><td>Fabricación estándar y opción bajo plano de cliente</td></tr>`;
+      }
+
+      tableBody.innerHTML = tableHtml;
+
+      const qtyInput = document.getElementById('pdpQtyInput');
+      document.getElementById('btnQtyMinus').addEventListener('click', () => {
+        let v = parseInt(qtyInput.value, 10);
+        if (v > 1) qtyInput.value = v - 1;
+      });
+      document.getElementById('btnQtyPlus').addEventListener('click', () => {
+        let v = parseInt(qtyInput.value, 10);
+        qtyInput.value = v + 1;
+      });
+
+      document.getElementById('btnPdpAddQuote').addEventListener('click', () => {
+        const q = parseInt(qtyInput.value, 10) || 1;
+        addToQuote(product.id, q);
+      });
+
+      const waBtn = document.getElementById('btnPdpWhatsappDirect');
+      const waMsg = encodeURIComponent(`Hola Herramec, deseo consultar precio y disponibilidad de: ${product.title} (${product.sku}).`);
+      waBtn.href = `https://wa.me/51952392860?text=${waMsg}`;
+
+      const tabBtns = document.querySelectorAll('.tab-btn-tech');
+      const tabPanes = document.querySelectorAll('.tab-pane-content');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tabBtns.forEach(b => b.classList.remove('active'));
+          tabPanes.forEach(p => p.classList.remove('active'));
+          btn.classList.add('active');
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) target.classList.add('active');
+        });
+      });
+
+      const relatedGrid = document.getElementById('relatedProductsGrid');
+      const related = window.HERRAMEC_PRODUCTS
+        .filter(p => p.category_id === product.category_id && p.id !== product.id)
+        .slice(0, 4);
+
+      if (related.length === 0) {
+        related.push(...window.HERRAMEC_PRODUCTS.filter(p => p.id !== product.id).slice(0, 4));
+      }
+
+      relatedGrid.innerHTML = related.map(r => `
+        <article class="product-card">
+          <div class="product-media-wrapper">
+            <span class="product-sku-badge">${r.sku}</span>
+            <img src="${r.image}" alt="${r.title}" onerror="this.src='${r.image_remote}'">
+            <button class="product-quickview-btn" onclick="openQuickView(${r.id})" title="Ficha Rápida">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <span class="product-category-meta">${r.category_name}</span>
+            <h3 class="product-title"><a href="producto-detalle.html?id=${r.id}">${r.title}</a></h3>
+            <div class="product-spec-line">${r.application}</div>
+            <div class="product-bottom-row">
+              <button class="btn-add-quote js-add-to-quote" data-id="${r.id}">
+                + Añadir a Cotización
+              </button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
